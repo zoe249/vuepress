@@ -1,3 +1,5 @@
+// const moment = require('moment');
+
 module.exports = {
     title: '你那天在脸红什么',
     description: "你那天在脸红什么",
@@ -19,33 +21,46 @@ module.exports = {
                 ]
             }
         ],
-        // sidebar: {
-        //     "/css/": [
-        //         'css-a',
-        //         'css-b',
-        //         'css-c',
-        //     ],
-        //     "/javascript/": [
-        //         'js-a',
-        //         'js-b',
-        //         'js-c',
-        //     ]
-        // }
-        sidebar: [
-            '',
-            'about',
-            'about1',
-            {
-                title: '我的css', // 必要的
-                path: '/css/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-                collapsable: false, // 可选的, 默认值是 true,
-                sidebarDepth: 1, // 可选的, 默认值是 1
-                children: [
-                    '/css/css-a',
-                    '/css/css-b',
-                    '/css/css-c'
-                ]
-            },
-        ]
-    }
+        sidebar: {
+            "/css/": [
+                'css-a',
+                'css-b',
+                'css-c',
+            ],
+            "/javascript/": [
+                'js-a',
+                'js-b',
+                'js-c',
+            ]
+        }
+    },
+    // plugins: [
+    //     [
+    //         '@vuepress/last-updated',
+    //         {
+    //             transformer: (timestamp, lang) => {
+    //                 // 不要忘了安装 moment
+    //                 moment.locale('zh-cn')
+    //                 return moment(timestamp).format('LLLL')
+    //             }
+    //         }
+    //     ]
+    // ]
 }
+
+// sidebar: [
+//     '',
+//     'about',
+//     'about1',
+//     {
+//         title: '我的css', // 必要的
+//         path: '/css/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+//         collapsable: false, // 可选的, 默认值是 true,
+//         sidebarDepth: 1, // 可选的, 默认值是 1
+//         children: [
+//             '/css/css-a',
+//             '/css/css-b',
+//             '/css/css-c'
+//         ]
+//     },
+// ]
