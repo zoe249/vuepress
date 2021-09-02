@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     init() {
-      import("countup.js").then((module) => {
+      import("countup.js").then(module => {
         // use code
         this.$nextTick(()=>{
             this.counter = new module.CountUp(this.$refs.counter,this.endVal,{
