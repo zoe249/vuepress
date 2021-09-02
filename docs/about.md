@@ -15,4 +15,6 @@ title: 关于页面
 ## 一级标题
 ## 一级标题
 
-<Vssue />
+<!-- <Vssue /> -->
+
+追加了 travis CI
