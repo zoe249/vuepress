@@ -18,3 +18,5 @@ title: 关于页面
 <!-- <Vssue /> -->
 
 追加了 travis CI
+追加了 travis CI
+追加了 travis CI
