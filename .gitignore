@@ -24,4 +24,4 @@ pnpm-debug.log*
 
 
 #隐藏私密信息
-secret.js
+# secret.js
